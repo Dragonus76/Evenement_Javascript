@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Phase de capture et de bouillonement</title>
+</head>
+<body>
+
+	<div id="cap1">
+
+		<span id="cap2">Cliquez-moi pour laphase de bouillement .</span>
+
+	</div>
+
+	<div id="loul1">
+
+		<span id="loul2">Cliquez-moi pour la phase de bouillonement.</span>
+		
+
+	</div>
+
+	<script type="text/javascript">
+
+
+		var cap1 = document.getElementById('cap1'),
+			cap2 = document.getElementById('cap2'),
+			loul1 = document.getElementById('loul1'),
+			loul2 = document.getElementById('loul2');
+
+
+			cap1.addEventListener('click', function(){
+
+				alert("l'événement du div vient de se déclencher.");
+
+
+			}, true);
+
+
+			cap2.addEventListener('click',function(){
+
+				alert("l'événement du span vient de se déclencher .");
+			}, true);
+
+
+			loul1.addEventListener('click', function(){
+
+				alert("l'événement du div vient de se déclencher .");
+
+
+			},false);
+
+
+			loul2.addEventListener('click', function(){
+
+				alert("l'événement du span de se déclencher .");
+
+			},false);
+
+		
+
+
+
+
+
+	</script>
+
+</body>
+</html>

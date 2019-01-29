@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Evenement_Javascript</title>
+</head>
+<body>
+
+	<span id="clickme">Cliquez-moi ! </span>
+</br></br>
+
+	<div id="coucou">Coucou</div>
+
+	</br><br/>
+
+	<div id="teste">Teste</div>
+
+	<script type="text/javascript">
+
+
+// Le DOM 0 Ancienne methode
+
+
+	//	var element = document.getElementById('clickme');
+
+
+	//	element.onclick = function ( ) {
+
+	//		alert("Vous m'avez cliqué !");
+			// body...
+	//	};
+
+
+		
+
+		// Le Dom 2
+
+
+		var element = document.getElementById('clickme');
+
+			element.addEventListener('click', function(){
+
+				alert("Vous m'avez cliqué");
+			});
+
+
+			// Même chose mais de façon plus rapide
+
+
+			var element = document.getElementById('coucou');
+
+			var myFunction = function(){
+
+				alert("Vous m'avez cliqué !");
+			};
+
+			element.addEventListener('click', myFunction);
+
+
+			var element = document.getElementById('teste');
+
+			// Premier événement click
+
+			element.addEventListener('click', function(){
+
+				alert("coucou");
+			});
+
+			// Deuxiémme événement click 
+
+			element.addEventListener('click', function(){
+
+				alert("Play");
+
+
+			});
+
+
+
+	</script>
+
+</body>
+</html>

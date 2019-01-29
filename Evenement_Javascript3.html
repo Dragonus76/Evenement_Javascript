@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Interagir avec la sourie</title>
+</head>
+<body>
+
+	<span id="clickme">Cliquez-moi !</span>
+
+	<script type="text/javascript">
+
+
+		var clickme = document.getElementById('clickme');
+
+			clickme.addEventListener('click', function(e){
+
+
+				e.target.innerHTML = 'Vous avez cliqué ! ';
+
+
+
+			});
+		
+
+
+	</script>
+
+</body>
+</html>
