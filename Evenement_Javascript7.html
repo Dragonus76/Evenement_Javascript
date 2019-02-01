@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Le Problème des Evenements</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	<div id="myDiv">
+
+	<div>Texte1</div>
+	<div>Texte2</div>
+	<div>Texte3</div>
+	<div>Texte4</div>
+
+</div>
+
+<div id="results"></div>
+
+
+<script type="text/javascript">
+
+	myDiv.addEventListener('mouseout', function(e){
+
+
+		var relatedTarget = e.relatedTarget;
+
+		while(relatedTarget != myDiv relatedTarget.nodeName != 'BODY' && relatedTarget != document){
+
+			relatedTarget = relatedTarget.parentNode;
+		}
+
+		if(relatedTarget != myDiv){
+
+			results.innerHTML += "Le curseur de sortir. <br/>";
+		}
+	});
+	
+
+
+
+</script>
+
+
+</body>
+</html>
